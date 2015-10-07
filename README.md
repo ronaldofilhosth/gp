@@ -24,7 +24,17 @@ Sistema web para gerenciamento de produtos desenvolvidos em parceria com a [Sist
   
 #### Build
   * [Maven]()
-  
+
+#### Como executar 
+
+É necessário possuir o maven e o git instalados.
+
+```sh
+$ git clone https://github.com/levymoreira/gp.git
+$ cd gp
+$ mvn spring-boot:run
+```
+
 #### A fazer
 - Adicionar validações (campo obrigatório)
 - Adicionar spring security com login
@@ -35,16 +45,4 @@ Sistema web para gerenciamento de produtos desenvolvidos em parceria com a [Sist
 - Executar grunt build no build do maven
 - Disponibilizar demo da aplicação
 - Adicionar testes com junit, karma e protractor
-
-#### Como executar 
-
-É necessário possuir o maven e o git instalados.
-
-```sh
-$ git clone [repositorio]
-$ cd gp
-$ mvn spring-boot:run
-```
-
-
 
