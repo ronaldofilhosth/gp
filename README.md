@@ -1,6 +1,6 @@
 # GP
 
-Sistema web para gerenciamento de produtos desenvolvidos em parceria com a [Sistech Informática]().
+Sistema web para gerenciamento desenvolvido por [Sistech Informática]().
 #### Backend
   * [Java 8]() 
   * [Jersey (REST)]()
