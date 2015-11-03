@@ -180,6 +180,11 @@
   background-color: #3b8ab8;
 }
 
+/*
+ * Configurações Gerais
+ * ---------------------
+ */
+
 /***************************
  Adicionando Fonte Open Sans
 ***************************/
@@ -304,6 +309,10 @@ h5 {
   padding-top: 85px; 
 }
 
+.user-panel {
+  padding: 0px;
+}
+
 @media (max-width: 767px) {
  .main-sidebar,
  .left-side {  
@@ -322,13 +331,15 @@ h5 {
 .main-header .logo {   
   height: 70px;  
   margin-top: 12px;
+  padding: 0px 10px;
 }
 
-.main-header .logo-mini {   
-  padding: 0 10px;
+.main-header .logo-mini { 
+  max-height: 70px;
+  padding: 0 10px;  
 }
 
-.main-header .logo-lg {
+.main-header .logo-lg{
   max-height: 70px;   
   padding: 0 0px;
 }
@@ -441,9 +452,6 @@ h5 {
    text-align: center;  
    line-height: 120px;
  }
-
-
-
  
 
 
