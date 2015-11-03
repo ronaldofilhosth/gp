@@ -10,6 +10,7 @@ Sistema web para gerenciamento desenvolvido por [Sistech Informática]().
   
 #### Front-end
   * [AngularJS]() 
+  * [Bootstrap]() 
   * [Bower]() 
   * [Grunt]() 
   * [Karma]()
@@ -30,7 +31,7 @@ Sistema web para gerenciamento desenvolvido por [Sistech Informática]().
 É necessário possuir o maven e o git instalados.
 
 ```sh
-$ git clone https://github.com/levymoreira/gp.git
+$ git clone https://github.com/sistechgithub/gp.git
 $ cd gp
 $ mvn spring-boot:run
 ```
