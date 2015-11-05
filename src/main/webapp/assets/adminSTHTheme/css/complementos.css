@@ -5,7 +5,7 @@
 .shadow-0 {
   box-shadow: none !important; }
 
-.shadow-1 {
+.shadow-1, .menu-box {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .shadow-1-half {
@@ -15,7 +15,7 @@ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); 
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.34), 0px 0px 6px 0px rgba(0, 0, 0, 0.14);
 }
 
-.shadow-2 {
+.shadow-2, .menu-box:hover {
 box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .shadow-3 {

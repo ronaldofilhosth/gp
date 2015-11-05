@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="assets/libs/ionicons/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/adminSTHTheme/css/AdminLTE.css">  
-    <link rel="stylesheet" href="assets/adminSTHTheme/css/skins/all-skins-sth.css">    
+    <link rel="stylesheet" href="assets/adminSTHTheme/css/skins/sth-skin-blue-light.css">    
     <link rel="stylesheet" href="assets/adminSTHTheme/css/complementos.css">
+    <!-- Waves CSS -->
+    <link rel="stylesheet" href="assets/adminSTHTheme/css/waves.css">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="assets/libs/animate-css/animate.css">
 
@@ -40,8 +42,8 @@
   Apply one or more of the following classes to get the
   desired effect
   |---------------------------------------------------------|
-  | SKINS         | skin-sth-blue-light                     |
-  |               | skin-sth-blue-dark                      |
+  | SKINS         | sth-skin-blue-light                     |
+  |               | sth-skin-dark                      |
   |                                                         |
   |---------------------------------------------------------|
   |LAYOUT OPTIONS | fixed                                   |
@@ -51,7 +53,7 @@
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-  <body ng-app="gp" class="hold-transition skin-sth-blue-light sidebar-mini sidebar-collapse fixed">
+  <body ng-app="gp" class="hold-transition sth-skin-blue-light sidebar-mini sidebar-collapse fixed">
     <div class="wrapper">
 
       <!-- Main Header -->
@@ -99,19 +101,19 @@
                   -->
                   <!-- Menu Footer-->
                   <li class="user-footer">
-                    <!--<div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Conta</a>
+                    <div class="pull-left">
+                      <a href="" class="btn btn-default btn-flat">Conta</a>
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sair</a>
-                    </div>
-                    -->
-                    <div class="pull-left">
+                      <a href="" class="btn btn-default btn-flat">Sair</a>
+                    </div>                   
+                    <!--<div class="pull-left">
                       <a href="javascript:void(0);" data-skin="skin-sth-blue-dark" class="btn btn-default btn-flat">Dark</a>
                     </div>
                     <div class="pull-right">
                       <a href="javascript:void(0);" data-skin="skin-sth-blue-light" class="btn btn-default btn-flat">Light</a>
                     </div>
+                    -->
                   </li>
                 </ul>
               </li>
@@ -169,7 +171,7 @@
             <li class="treeview">
               <a href=""><i class="fa fa-file-word-o fa-fw"></i><span> Relatórios</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="#produtos"><i class="fa fa-archive fa-fw"></i> Notas<i class="fa fa-angle-left pull-right"></i></a>
+                <li><a href=""><i class="fa fa-archive fa-fw"></i> Notas<i class="fa fa-angle-left pull-right"></i></a>
                   <ul class="treeview-menu">
                     <li><a href="#produtos"><span class="treeview-menu-ml30"><i class="fa fa-archive fa-fw"></i> Produtos</span></a></li>
                     <li><a href="#produtos"><span class="treeview-menu-ml30"><i class="fa fa-archive fa-fw"></i> Grupo</span></a></li>
@@ -247,22 +249,18 @@
 
     <!-- AdminSTH App -->
     <script src="assets/adminSTHTheme/js/AdminLTE.js"></script>
-    <!-- AdminSTH Tema -->
+    <!-- AdminSTH Tema 
     <script src="assets/adminSTHTheme/js/demo.js"></script>
-    <!-- Tela cheia -->
+    -->
+    <!-- Tela Cheia -->
     <script src="assets/adminSTHTheme/js/fullscreen.js"></script>
 
     <!-- PLUGINS -->
-  
+    
     <!-- SlimScroll 1.3.0 -->
     <script src="assets/libs/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-    <!-- DataTables -->
-    <script src="bower_components/angular-datatables/angular-datatables.js"></script>
-    <script src="bower_components/angular-datatables/plugins/bootstrap/angular-datatables.bootstrap.js"></script>
-    
-    <!--<script src="assets/libs/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="assets/libs/plugins/datatables/dataTables.bootstrap.min.js"></script>  
-    -->
+    <!-- Waves Animation -->
+    <script src="assets/adminSTHTheme/js/waves.js"></script>
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the
