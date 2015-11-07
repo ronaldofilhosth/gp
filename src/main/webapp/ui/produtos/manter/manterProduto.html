@@ -1,31 +1,35 @@
-<section class="content-header">
-  <h1>
-    Produto
-    <small>{{status}}</small>
-  </h1>
-  <ol class="breadcrumb">
-    <li><a href="#/"><i class="fa fa-dashboard"></i>Home</a></li>
-    <li><a href="#/produtos"><i class="fa fa-circle-o"></i>Produtos</a></li>
-    <li class="active">{{vm.status}}</li>
-  </ol>
+<section class="row wrapper-page border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h3 class="mtb">
+        Produto
+        <small>{{status}}</small>
+      </h3>
+      <ol class="breadcrumb">
+          <li><a href="#/"><i class="fa fa-home fa-fw"></i>Home</a></li>
+          <li><a href="#/produtos"><i class="fa fa-archive fa-fw"></i>Produtos</a></li>
+          <li class="active"><i class="fa fa-plus-square fa-fw"></i>{{vm.status}}</li>              
+      </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
 </section>
 
-<section class="content">
+<section class="content content grey lighten-4">
   <div class="row">
     <div class="col-md-6">
-      <div class="box box-primary">
+      <div class="box box-primary shadow-1-box animated fadeInRight">
         <form role="form">
           <div class="box-body">
             <div class="form-group">
               <label for="descricao">Descrição</label>
-              <textarea id="descricao" rows="10" cols="50" class="form-control"
+              <textarea id="descricao" rows="6" cols="50" class="form-control"
                         ng-model="vm.produto.descricao"></textarea>
             </div>
           </div>
           <div class="box-footer">
             <button class="btn btn-primary" ng-show="vm.status=='Editar'" ng-click="vm.alterar()">Alterar</button>
-            <button class="btn btn-primary" ng-show="vm.status!='Editar'" ng-click="vm.salvar()">Inserir</button>
-            <a class="btn btn-primary" href="#/produtos">Cancelar</a>
+            <button class="btn btn-success" ng-show="vm.status!='Editar'" ng-click="vm.salvar()">Inserir</button>
+            <a class="btn btn-danger" href="#/produtos">Cancelar</a>
           </div>
         </form>
       </div>
