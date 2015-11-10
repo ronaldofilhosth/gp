@@ -191,11 +191,11 @@
 /***************************
  Adicionando Fonte Open Sans
 ***************************/
-
+/*
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");
-
+*/
 body {  
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;  
   font-size: 13px;
   color: #000;
 }
@@ -216,7 +216,7 @@ h6 {
 .h4,
 .h5,
 .h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 h1 {
   font-size: 30px;
@@ -256,7 +256,7 @@ h5 {
 }
 
 .main-header .logo {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 /**************************
