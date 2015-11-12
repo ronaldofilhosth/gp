@@ -1,6 +1,6 @@
 # GP
 
-Sistema web para gerenciamento de produtos desenvolvidos em parceria com a [Sistech Informática]().
+Sistema web para gerenciamento desenvolvido por [Sistech Informática]().
 #### Backend
   * [Java 8]() 
   * [Jersey (REST)]()
@@ -10,6 +10,7 @@ Sistema web para gerenciamento de produtos desenvolvidos em parceria com a [Sist
   
 #### Front-end
   * [AngularJS]() 
+  * [Bootstrap]() 
   * [Bower]() 
   * [Grunt]() 
   * [Karma]()
@@ -30,7 +31,7 @@ Sistema web para gerenciamento de produtos desenvolvidos em parceria com a [Sist
 É necessário possuir o maven e o git instalados.
 
 ```sh
-$ git clone https://github.com/levymoreira/gp.git
+$ git clone https://github.com/sistechgithub/gp.git
 $ cd gp
 $ mvn spring-boot:run
 ```
