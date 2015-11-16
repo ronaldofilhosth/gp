@@ -7,11 +7,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/produtos")
@@ -33,6 +29,12 @@ public class ProdutoController {
     @RequestMapping(value="/{codigo}", method=RequestMethod.GET)
     Produto buscar(@PathVariable("codigo") long codigo) {
         return produtoService.buscar(codigo);
+    }
+
+    @RequestMapping(value="/pesquisar", method=RequestMethod.GET)
+    Collection<Produto> pesquisar(@RequestParam(value="campo", defaultValue="codigo") String campo,
+                                  @RequestParam(value="valor", defaultValue="0") String valor) {
+        return produtoService.pesquisar(campo, valor);
     }
 
     @RequestMapping(value="/{codigo}", method=RequestMethod.PUT)

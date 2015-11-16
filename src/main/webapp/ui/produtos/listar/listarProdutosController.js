@@ -13,8 +13,12 @@
     var repositorio = new Repositorio('produtos');
 
     vm.produtos = [];
+    vm.valorPesquisa = '';
+    vm.camposParaPesquisa = [{desc: 'Código', valor: 'codigo'}, {desc: 'Descrição', valor: 'descricao'}];
+    vm.campoParaPesquisa = vm.camposParaPesquisa[1].valor;
 
     vm.deletar = deletar;
+    vm.pesquisar = pesquisar;
 
     inicializar();
 
@@ -27,6 +31,12 @@
     function deletar(produto) {
       repositorio.deletar(produto.codigo).then(function (resultado) {
         vm.produtos.remove(produto);
+      });
+    }
+
+    function pesquisar() {
+      repositorio.pesquisar(vm.campoParaPesquisa, vm.valorPesquisa).then(function (resultado) {
+        vm.produtos = resultado;
       });
     }
 

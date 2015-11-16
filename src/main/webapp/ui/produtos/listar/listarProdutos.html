@@ -3,7 +3,7 @@
         <h3 class="mtb">Produto</h3>
         <ol class="breadcrumb">
             <li><a href="#/"><i class="fa fa-home fa-fw"></i>Home</a></li>
-            <li class="active"><i class="fa fa-archive fa-fw"></i></i> Produtos</li>              
+            <li class="active"><i class="fa fa-archive fa-fw"></i></i> Produtos</li>
         </ol>
     </div>
     <div class="col-lg-2">
@@ -15,26 +15,33 @@
     <div class="col-xs-12">
       <div class="box shadow-1-box">
         <div class="box-body">
-        
+
           <a class="btn btn-success btn-flat" href="#/produtos/inserir"><i class="fa fa-plus"></i> Adicionar</a>
 
-          <!-- Button trigger modal 
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Launch demo modal
-          </button>-->   
+          <div class="input-group">
+            <input type="text" name="q" ng-model="vm.valorPesquisa" class="form-control" placeholder="Pesquisar...">
+            <span class="input-group-btn">
+              <button type="submit" name="search" ng-click="vm.pesquisar()" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+
+            <select class="form-control" ng-model="vm.campoParaPesquisa">
+              <option ng-repeat="campo in vm.camposParaPesquisa" value="{{campo.valor}}">{{campo.desc}}</option>
+            </select>
+          </div>
+
           <br> <br>
-          
+
           <div class="table-responsive">
             <table class="table table-striped table-bordered">
               <thead>
-              <tr>              
+              <tr>
                 <th>Código</th>
                 <th>Descrição</th>
                 <th>Ações</th>
               </tr>
               </thead>
               <tbody>
-              <tr ng-repeat="produto in vm.produtos">              
+              <tr ng-repeat="produto in vm.produtos">
                 <td>{{produto.codigo}}</td>
                 <td>{{produto.descricao}}</td>
                 <td>
@@ -53,34 +60,5 @@
     </div>
   </div>
 </div>
-
-  <!-- Modal 
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Inserir</h4>
-        </div>
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="descricao">Descrição</label>
-            <textarea id="descricao" rows="6" cols="50" class="form-control"
-                      ng-model="vm.produto.descricao"></textarea>
-            </div>
-        </div>
-
-        <div class="modal-footer">
-          <button class="btn btn-primary" ng-show="vm.status=='Editar'" ng-click="vm.alterar()">Alterar</button>
-          <button type="button" class="btn btn-success" ng-show="vm.status!='Editar'" ng-click="vm.salvar()" data-dismiss="myModal">Inserir</button>
-          <a class="btn btn-danger" href="#/produtos" data-dismiss="modal">Cancelar</a>      
-        </div>
-      </div>
-    </div>
-  </div>
--->
 
 </section>

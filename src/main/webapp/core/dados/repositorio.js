@@ -17,7 +17,8 @@
         salvar: salvar,
         alterar: alterar,
         deletar: deletar,
-        bucarPorCodigo: bucarPorCodigo
+        bucarPorCodigo: bucarPorCodigo,
+        pesquisar: pesquisar
       };
       return repositorio;
     };
@@ -60,6 +61,12 @@
       return restangular.one(codigo).get();
     }
 
+    function pesquisar(campo, valor) {
+      if(valor == '')
+        return listar();
+
+      return restangular.customGET("pesquisar", {'campo': campo, 'valor': valor} );
+    }
   }
 
 })();
